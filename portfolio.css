@@ -10,15 +10,20 @@ header {
     text-align: center;
     color: white;
 }
-.slider {
+.carousel {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
     position: relative;
     height: 300px;
-    overflow: hidden;
 }
-.slide img {
+.carousel img {
     width: 100%;
-    height: auto;
-    
+    display: none;
+}
+.carousel img.active {
+    display: block;
 }
 nav {
     background-color: #333;
@@ -40,7 +45,10 @@ section {
 h2 {
     color: #333;
 }
-
+h1{
+    color:#333;
+    text-align: center;
+}
 footer {
     background-color: #333;
     color: white;

@@ -1,35 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Carousel</title>
+    <link rel="stylesheet" href="portfolio.css"/>
 </head>
 <body>
     <header>
-        <h1>Anjal Magar</h1>
+        <p>Anjal Magar</p>
         <p>Web Developer | Designer </p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-            <div class="slider">
-                    <div class="slide">
-                    <img src="annapurna.jpg" alt="Project 1">
-                </div>
-    </div>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#Professional History">Professional History</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+ 
+        <div class="carousel">
+            <img src="annapurna.jpg" class="active" alt="cat">
+            <img src="spring.jpg" alt="woah">
+            <img src="travel.jpg" alt="kat">
+        </div>
     </header>
-
+        <h1>Welcome to my Website</h1>
     <section id="about">
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <p>Hello! I'm a passionate web developer with a knack for creating beautiful and functional websites. With 4 years of experience
             in web development, I thrive on creating innovation solutions that implemented best practices for web performance optimization,
             reducing page load 20%. When I am not working, I enjoy reading novels and travelling different places which fuels my creativity
-            and inspires my projects. Thank you for visiting my portfolio</p>
+            and inspires my projects. Thank you for visiting my portfolio.</p>
     </section>
-
+    
     <section id="education">
         <h2>Education</h2>
         <ul>
@@ -38,7 +40,8 @@
         </ul>
     </section>
 
-    <section id="experience">
+
+    <section id="Professional History">
         <h2>Professional History</h2>
         <ul>
             <li>Web Developer at Web creation Company (2020 - Present)</li>
@@ -56,9 +59,33 @@
                 <button type="submit">Send</button>
             </p>
     </section>
-
+    
     <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        &copy; 2025 My Website. All rights reserved.
     </footer>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll(".carousel img");
+
+        function showImage(index) {
+            images.forEach(img => img.classList.remove("active"));
+            images[index].classList.add("active");
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(nextImage, 3000);
+    </script>
+
 </body>
 </html>
