@@ -1,91 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio with Carousel</title>
-    <link rel="stylesheet" href="portfolio.css"/>
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    
 </head>
+
 <body>
-    <header>
-        <p>Anjal Magar</p>
-        <p>Web Developer | Designer </p>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#Professional History">Professional History</a>
-        <a href="#contact">Contact Me</a>
-    </nav>
- 
-        <div class="carousel">
-            <img src="annapurna.jpg" class="active" alt="cat">
-            <img src="spring.jpg" alt="woah">
-            <img src="travel.jpg" alt="kat">
-        </div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Anjal Magar</h2>
+            </div>
+            <div class="ti" id="ti">
+                <i class="fas fa-bars ti-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="top">
+                <ul class="list">
+                    <li class="list-items">
+                        <a class="links" href="#home">
+                              Home
+                          </a>
+                    </li>
+                    <li class="list-items">
+                        <a class="links" href="#about">
+                              About
+                          </a>
+                    </li>
+                    <li class="list-items">
+                        <a class="links" href="#education">
+                              Education
+                          </a>
+                    </li>
+                    <li class="list-items">
+                        <a class="links" href="#services">
+                              Services
+                          </a>
+                    </li>
+                    <li class="list-items">
+                        <a class="links" href="#contact">
+                              Contact Me
+                          </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-        <h1>Welcome to my Website</h1>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate web developer with a knack for creating beautiful and functional websites. With 4 years of experience
-            in web development, I thrive on creating innovation solutions that implemented best practices for web performance optimization,
-            reducing page load 20%. When I am not working, I enjoy reading novels and travelling different places which fuels my creativity
-            and inspires my projects. Thank you for visiting my portfolio.</p>
-    </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor in BCA -Nesfield University(2018)</li>
-            <li>Master in Web Development - University(2020)</li>
-        </ul>
-    </section>
 
-
-    <section id="Professional History">
-        <h2>Professional History</h2>
-        <ul>
-            <li>Web Developer at Web creation Company (2020 - Present)</li>
-            <li>Intern at Webtech Nepal Pvt.Ltd (2019- 2020)</li>
-        </ul>
+    <section id="home" class="ro">
+        <div class="intro">
+            <div class="headings">
+                </div>
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">Anjal Magar</h1>
+                <h4 class="sub-heading">A Software Engineer with 3 years of Experience.</h4>
+               
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn">Hire Me</button>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="c:\Users\HP\OneDrive\Pictures\Screenshots\Screenshot 2025-03-10 075943.png" alt="About Image">
+        </div>
     </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email or phone call.<br>
-            <li>Email:<a href="mailto:magarangel038@gmail.com">magarangel038@gmail.com</a></li>
-            <li>Phone no:9849285758</li>
-            <li> <label for="message">Message</label></li><br>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
+    </section>
+        <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="para">
+                Hello! I'm a passionate web developer with a knack for creating beautiful and functional websites. With 4 years of experience
+                in web development, I thrive on creating innovation solutions that implemented best practices for web performance optimization,
+                reducing page load 20%. When I am not working, I enjoy reading novels and travelling different places which fuels my creativity
+                and inspires my projects. Thank you for visiting my portfolio.
             </p>
+        </div>
+        <div class="about-image">
+            <img src="c:\Users\HP\Downloads\picture.jpg" alt="About Image">
+        </div>
+    </section><br>
+
+    <section id="education" class="education">
+        <div class="education-heading">
+     <h1 class="my-heading text-center">Education</h1>
+     <div>
+        <div class="services-content">
+            <div class="my-row">
+            <div class="my-col">
+            <div class="my-card">
+            <div class="icon">
+            <i class="fas fa-school"></i>
+            </div>
+            <h3>School</h3>
+            <p class="small-para">+2 in computer -MOLISS<br>(2013)</p>
+         </div>
+        </div>
+            <div class="my-col">
+            <div class="my-card">
+            <div class="icon">
+            <i class="fas fa-user-graduate"></i> 
+            </div>
+            <h2>Bachelor</h2>
+            <p class="small-para">Bachelor in BCA -Nesfield University(2018)</p>
+        </div>
+    </div>
+        <div class="my-col">
+            <div class="my-card">
+                <div class="icon">
+        <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h3>Master</h3>
+        <p class="small-para">Master in Web Development - University(2020)</p>
+     </div>
+    </div>
+    </div>
+    </div>
     </section>
-    
-    <footer>
-        &copy; 2025 My Website. All rights reserved.
+
+    <section class="services" id="services">
+        <div class="services-heading">
+            <h1 class="my-heading text-center">My Services</h1>
+        </div>
+        <div class="services-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Web Design</h3>
+                        <p class="small-para"> 
+                         My Responsive Design ensures websites look great on all devices, while my focus on UI/UX Design guarantees usability and 
+                         aesthetic appeal.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Web Development
+                          </h3>
+                        <p class="small-para">
+                        I offer comprehensive web development services, specializing in responsive front-end interfaces with HTML, CSS, and JavaScript,
+                         alongside robust back-end applications using Node.js, Python, and PHP for effective database management.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Video Editing</h3>
+                        <p class="small-para">
+                        I provide video editing services that transform raw footage into polished promotional and educational videos,enhanced with 
+                        engaging motion graphics and tailored color grading.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form">
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Name">
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Email">
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Phone">
+                    <textarea class="form-controls" 
+                              placeholder="Write your message" 
+                              name="message" id="" cols="30"
+                              rows="10">
+                      </textarea>
+                    <input class="form-btn btn common-btn" 
+                           type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1 class="greet-heading">My Contact Details</h1>
+                <div class="details">
+                    <h5 class="contact-heading">EMAIL</h5>
+                    </b><a href="angelmagar@gmail.com">angelmagar@gmail.com</a>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">PHONE</h5>
+                    <p class="contact-text">+9842485729</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">FAX</h5>
+                    <p class="contact-text">+91 0123456789</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2025 All rights reserved 
+            </h4>
+            <div class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li class="footer-list-items">
+                        <a class="footer-links" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="footer-list-items">
+                        <a class="footer-links" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="footer-list-items">
+                        <a class="footer-links" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="footer-list-items">
+                        <a class="footer-links" href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     </footer>
 
-    <script>
-        let currentIndex = 0;
-        const images = document.querySelectorAll(".carousel img");
-
-        function showImage(index) {
-            images.forEach(img => img.classList.remove("active"));
-            images[index].classList.add("active");
-        }
-
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
-        }
-
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            showImage(currentIndex);
-        }
-
-        // Auto-slide every 3 seconds
-        setInterval(nextImage, 3000);
-    </script>
-
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    integrity=
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" >
+    
+      </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
